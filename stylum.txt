@@ -1,0 +1,3 @@
+1.before and after position not fix
+2.header data flow out on responsive
+

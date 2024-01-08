@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header_main">
+      <div class="slider">
+        <p class="anoucement_bar">FREE SHIPPING IN INDIA</p>
+        <p class="anoucement_bar">SHOP FOR ₹999 & GET EXTRA 5% OFF</p>
+      </div>
+      <div class="modal">
+        <div class="modal_input">
+          <input class="text_input" placeholder="Search" type="text" />
+          <button class="close_btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#ffff"
+              viewBox="0 0 32 32"
+              class="icon icon-close desktp"
+            >
+              <path
+                d="M18.8,16l5.5-5.5c0.8-0.8,0.8-2,0-2.8l0,0C24,7.3,23.5,7,23,7c-0.5,0-1,0.2-1.4,0.6L16,13.2l-5.5-5.5  c-0.8-0.8-2.1-0.8-2.8,0C7.3,8,7,8.5,7,9.1s0.2,1,0.6,1.4l5.5,5.5l-5.5,5.5C7.3,21.9,7,22.4,7,23c0,0.5,0.2,1,0.6,1.4  C8,24.8,8.5,25,9,25c0.5,0,1-0.2,1.4-0.6l5.5-5.5l5.5,5.5c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L18.8,16z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <sticky-header class="header_main_wrapper">
+        <div class="header_wraper container-max-width">
+          <div class="search_track track">
+            <a href="https://www.bluedart.com/tracking">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 64 64"
+                class="icon icon-track-order"
+              >
+                <g id="Tracking">
+                  <path
+                    d="M61.707,34.293,49.293,21.879A2.978,2.978,0,0,0,47.171,21H30v2h5V38h2V23H47.171a1,1,0,0,1,.708.293L49.586,25H45a2,2,0,0,0-2,2v9a2,2,0,0,0,2,2H60v8a1,1,0,0,1-1,1H56.92a6.991,6.991,0,0,0-13.84,0H28.92a6.991,6.991,0,0,0-13.84,0H13a1,1,0,0,1-1-1V37H10v9a3,3,0,0,0,3,3h2.08a6.978,6.978,0,0,0,2.031,4H2v2H50a7.006,7.006,0,0,0,6.92-6H59a3,3,0,0,0,3-3V35A1,1,0,0,0,61.707,34.293ZM17,48a5,5,0,1,1,5,5A5.006,5.006,0,0,1,17,48Zm9.889,5a6.978,6.978,0,0,0,2.031-4H43.08a6.978,6.978,0,0,0,2.031,4ZM50,53a5,5,0,1,1,5-5A5.006,5.006,0,0,1,50,53ZM45,36V27h6.586L60,35.414V36Z"
+                  ></path>
+                  <rect x="21" y="47" width="2" height="2"></rect>
+                  <rect x="49" y="47" width="2" height="2"></rect>
+                  <rect x="2" y="44" width="5" height="2"></rect>
+                  <rect x="4" y="40" width="3" height="2"></rect>
+                  <rect x="5" y="36" width="2" height="2"></rect>
+                  <path
+                    d="M15,35A13,13,0,1,0,2,22,13.015,13.015,0,0,0,15,35Zm0-24A11,11,0,1,1,4,22,11.013,11.013,0,0,1,15,11Z"
+                  ></path>
+                  <path
+                    d="M15,31a1,1,0,0,0,.707-.293C16.351,30.063,22,24.29,22,20A7,7,0,0,0,8,20c0,4.29,5.649,10.063,6.293,10.707A1,1,0,0,0,15,31Zm0-16a5.006,5.006,0,0,1,5,5c0,2.566-3.147,6.531-5,8.551-1.853-2.02-5-5.985-5-8.551A5.006,5.006,0,0,1,15,15Z"
+                  ></path>
+                  <path
+                    d="M18,20a3,3,0,1,0-3,3A3,3,0,0,0,18,20Zm-4,0a1,1,0,1,1,1,1A1,1,0,0,1,14,20Z"
+                  ></path>
+                  <rect x="40" y="40" width="4" height="2"></rect>
+                </g>
+              </svg>
+            </a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              class="modal__toggle-open icon icon-search"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M15 15L21 21"
+                stroke="#323232"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                stroke="#323232"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+          <div class="head_text">
+            <h1 class="header__heading">
+              <a
+                href="/"
+                class="header__heading-link link link--text focus-inset"
+                ><img
+                  src="images/new_stylum_logo.webp"
+                  alt="Logo"
+                  ="
+                  //stylum.in/cdn/shop/files/new_stylum_logo.png?v=1689138364&amp;width=50   50w,
+                  //stylum.in/cdn/shop/files/new_stylum_logo.png?v=1689138364&amp;width=100 100w,
+                  //stylum.in/cdn/shop/files/new_stylum_logo.png?v=1689138364&amp;width=150 150w,
+                  //stylum.in/cdn/shop/files/new_stylum_logo.png?v=1689138364&amp;width=200 200w,
+                  //stylum.in/cdn/shop/files/new_stylum_logo.png?v=1689138364&amp;width=250 250w,
+                  //stylum.in/cdn/shop/files/new_stylum_logo.png?v=1689138364&amp;width=300 300w,
+                  //stylum.in/cdn/shop/files/new_stylum_logo.png?v=1689138364&amp;width=400 400w,
+                  //stylum.in/cdn/shop/files/new_stylum_logo.png?v=1689138364&amp;width=500 500w
+                "
+                  width="120"
+                  height="51.05150214592274"
+                  class="header__heading-logo ls-is-cached lazyloaded"
+                />
+              </a>
+            </h1>
+          </div>
+          <div class="header_icon">
+            <div class="header_icon_icons">
+              <a
+                href="/account/login"
+                class="header__icon header__icon--account link focus-inset small-hides"
+                aria-label="Your Account"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-account"
+                  viewBox="0 0 24 24"
+                  id="Layer_1"
+                  data-name="Layer 1"
+                >
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: none;
+                        stroke: #020202;
+                        stroke-miterlimit: 10;
+                        stroke-width: 1.91px;
+                      }
+                    </style>
+                  </defs>
+                  <circle class="cls-1" cx="12" cy="7.25" r="5.73"></circle>
+                  <path
+                    class="cls-1"
+                    d="M1.5,23.48l.37-2.05A10.3,10.3,0,0,1,12,13h0a10.3,10.3,0,0,1,10.13,8.45l.37,2.05"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="header_icon_icons header_like_icon">
+              <a href>
+                <svg
+                  width="30"
+                  class="icon icon-wishlist"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.3314 12.0474L12 20L19.6686 12.0474C20.5211 11.1633 21 9.96429 21 8.71405C21 6.11055 18.9648 4 16.4543 4C15.2487 4 14.0925 4.49666 13.24 5.38071L12 6.66667L10.76 5.38071C9.90749 4.49666 8.75128 4 7.54569 4C5.03517 4 3 6.11055 3 8.71405C3 9.96429 3.47892 11.1633 4.3314 12.0474Z"
+                    stroke="#000000"
+                    stroke-width="1.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="header_icon_icons">
+              <a href>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 96 900 900"
+                  width="30"
+                  class="icon icon-cart-empty"
+                  style="fill: #323232"
+                >
+                  <path
+                    d="M242.565 955.999q-25.788 0-44.176-18.388t-18.388-44.176v-474.87q0-25.788 18.388-44.176t44.176-18.388h92.308v-14.872q0-60.666 42.23-102.897Q419.334 196.001 480 196.001q60.666 0 102.897 42.231 42.23 42.231 42.23 102.897v14.872h92.308q25.788 0 44.176 18.388t18.388 44.176v474.87q0 25.788-18.388 44.176t-44.176 18.388h-474.87Zm0-50.255h474.87q4.616 0 8.462-3.847 3.847-3.846 3.847-8.462v-474.87q0-4.616-3.847-8.462-3.846-3.847-8.462-3.847h-92.308v94.873q0 10.698-7.249 17.913-7.249 7.214-17.999 7.214t-17.878-7.214q-7.128-7.215-7.128-17.913v-94.873H385.127v94.873q0 10.698-7.249 17.913-7.249 7.214-17.999 7.214t-17.878-7.214q-7.128-7.215-7.128-17.913v-94.873h-92.308q-4.616 0-8.462 3.847-3.847 3.846-3.847 8.462v474.87q0 4.616 3.847 8.462 3.846 3.847 8.462 3.847Zm142.562-549.743h189.746v-14.872q0-39.923-27.475-67.398-27.475-27.475-67.398-27.475-39.923 0-67.398 27.475-27.475 27.475-27.475 67.398v14.872ZM230.256 905.744V406.256v499.488Z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header_items">
+          <ul class="head_items">
+            <li><a class="items_category" href>New Arrivals</a></li>
+            <div class="dropdown-menu">
+              <summary>
+                <li>
+                  <a class="items_category dropdown" href>Kurta & Kurtis</a>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    role="presentation"
+                    class="icon icon-caret"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </li>
+              </summary>
+              <ul class="headermenu-list">
+                <li>
+                  <a
+                    href="/collections/a-line-kurta"
+                    class="header__menu-item list-menu__item link link--text focus-inset caption-large"
+                  >
+                    A-Line Kurta
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/collections/straight-kurta"
+                    class="header__menu-item list-menu__item link link--text focus-inset caption-large"
+                  >
+                    Straight Kurta
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/collections/anarkali-kurta"
+                    class="header__menu-item list-menu__item link link--text focus-inset caption-large"
+                  >
+                    Anarkali Kurta
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/collections/flared-kurta"
+                    class="header__menu-item list-menu__item link link--text focus-inset caption-large"
+                  >
+                    Flared Kurta
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown-menu">
+              <summary>
+                <li>
+                  <a class="items_category dropdown" href>Suits Sets</a>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    role="presentation"
+                    class="icon icon-caret"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </li>
+              </summary>
+              <ul class="headermenu-list">
+                <li><a href="/collections/sharara-sets" class="header__menu-item list-menu__item link link--text focus-inset caption-large">
+                  Sharara Sets
+                </a></li><li><a href="/collections/anarkali-suit-sets" class="header__menu-item list-menu__item link link--text focus-inset caption-large">
+                  Anarkali Suit Sets
+                </a></li><li><a href="/collections/kurta-sets" class="header__menu-item list-menu__item link link--text focus-inset caption-large">
+                  Kurta Sets
+                </a></li>
+              </ul>
+            </div>
+            <li><a class="items_category" href>Co-Ords Set</a></li>
+            <li><a class="items_category" href>Sarees</a></li>
+            <div class="dropdown-menu">
+              <summary>
+                <li>
+                  <a class="items_category dropdown" href>Western Wear</a>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    role="presentation"
+                    class="icon icon-caret"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </li>
+              </summary>
+              <ul class="headermenu-list">
+               <li><a href="/collections/dresses" class="header__menu-item list-menu__item link link--text focus-inset caption-large">
+                  Dresses
+                </a></li><li><a href="/collections/tops" class="header__menu-item list-menu__item link link--text focus-inset caption-large">
+                  Tops
+                </a></li>
+              </ul>
+            </div>
+            <li><a class="items_category" href>Lounge Wear</a></li>
+            <div class="dropdown-menu">
+              <summary>
+                <li>
+                  <a class="items_category dropdown" href>Plus Size</a>
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    role="presentation"
+                    class="icon icon-caret"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </li>
+              </summary>
+              <ul class="headermenu-list">
+                <li>
+                  <a
+                    href="/collections/plus-size-kurtas"
+                    class="header__menu-item list-menu__item link link--text focus-inset caption-large"
+                  >
+                    Plus Size Kurta
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/collections/plus-size-suit-sets"
+                    class="header__menu-item list-menu__item link link--text focus-inset caption-large"
+                  >
+                    Plus Size Suit Sets
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/collections/plus-size-lounge-wear"
+                    class="header__menu-item list-menu__item link link--text focus-inset caption-large"
+                  >
+                    Plus Size Lounge Wear
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <li><a class="items_category" href>Festive Wear</a></li>
+          </ul>
+        </div>
+      </sticky-header>
+    </header>
+    <main>
+      <div class="categories">
+        <div class="items_row">
+          <img src="images/item_row_image/i.webp" alt />
+          <div class="content">
+            <a href="/collections/new-arrivals">New Arrival</a>
+          </div>
+        </div>
+        <div class="items_row">
+          <img
+            src="images/item_row_image/Anarkali_Suit_Sets_large_ad7b973d-451b-4dc3-9bb4-86acfba77f33_large.webp"
+            alt
+          />
+          <div class="content">
+            <a href="/collections/new-arrivals">New Arrival</a>
+          </div>
+        </div>
+        <div class="items_row">
+          <img
+            src="images/item_row_image/Co-Ords_Set_large_82910285-f5fb-44b7-a0e0-b6489a29f7de_large.webp"
+            alt
+          />
+          <div class="content">
+            <a href="/collections/new-arrivals">New Arrival</a>
+          </div>
+        </div>
+        <div class="items_row">
+          <img
+            src="images/item_row_image/Dresses_large_c6d09433-5d24-4e0f-ac15-892a23110f6b_large.webp"
+            alt
+          />
+          <div class="content">
+            <a href="/collections/new-arrivals">New Arrival</a>
+          </div>
+        </div>
+
+        <div class="items_row">
+          <img src="images/item_row_image/Casual_Kurta_large.webp" alt />
+          <div class="content">
+            <a href="/collections/new-arrivals">New Arrival</a>
+          </div>
+        </div>
+        <div class="items_row">
+          <img src="images/item_row_image/Sarees_large_1_large.jpg" alt />
+          <div class="content">
+            <a href="/collections/new-arrivals">New Arrival</a>
+          </div>
+        </div>
+        <div class="items_row">
+          <img src="images/item_row_image/Kurta_Sets_large.webp" />
+          <div class="content">
+            <a href="/collections/new-arrivals">New Arrival</a>
+          </div>
+        </div>
+        <div class="items_row">
+          <img
+            src="images/item_row_image/Lounge_Wear_large_91df9e75-014d-41e0-9043-caf5ba093022_large.webp"
+          />
+          <div class="content">
+            <a href="/collections/new-arrivals">New Arrival</a>
+          </div>
+        </div>
+      </div>
+      <div class="banners">
+        <div class="banner_image">
+          <img
+            src="images/banner-image/1st_hero_banner_1920x-min_1_1920x.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="gift_banner">
+        <div class="gift_banners banner_image">
+          <img src="images/gif/STYLUM-OFFER-POST-2_version1_1920x.gif" alt="" />
+        </div>
+        <div class="gift_banners banner_image">
+          <img src="images/gif/Stylum_Home_Page_Offer_1920x.webp" alt="" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="subheading">
+          <h2 class="subheading_title">Shop By Price</h2>
+        </div>
+        <div class="offer_image">
+          <div class="offer_cards">
+            <a href="">
+              <img
+                src="images/offer_cards/Stylum_offer_banner_1_8c55dc53-b125-4e78-8286-1130e2287ad7_768x.webp"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="offer_cards">
+            <a href="">
+              <img
+                src="images/offer_cards/Stylum_offer_banner_2_e189b59a-271d-4092-99e9-70bd74d02d92_768x.webp"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="offer_cards">
+            <a href="">
+              <img
+                src="images/offer_cards/Stylum_offer_banner_3_copy_768x.webp"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="offer_cards">
+            <a href="">
+              <img
+                src="images/offer_cards/Stylum_offer_banner_4_copy_768x.webp"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="category_design">
+        <div class="category_tittle">
+          <h2>Category</h2>
+        </div>
+        <div class="category_images">
+          <div class="category_image">
+            <img
+              src="images/category_image/Co-Ords_Set_copy_large_8458d6b4-8c75-4580-84af-eb85c694f012_large.webp"
+              alt=""
+            />
+          </div>
+          <div class="category_image">
+            <img
+              src="images/category_image/Dresses_large_742b217c-268e-4969-bfee-7a1d6029b94b_large.webp"
+              alt=""
+            />
+          </div>
+          <div class="category_image">
+            <img
+              src="images/category_image/Kurtas_Kurtis_large_e3dd32b9-4f0e-4396-87aa-67780fcd2d3a_large.webp"
+              alt=""
+            />
+          </div>
+          <!-- <div class="category_image">
+            <img
+              src="images/category_image/Co-Ords_Set_copy_large_8458d6b4-8c75-4580-84af-eb85c694f012_large.webp"
+              alt=""
+            />
+          </div> -->
+          <!-- <div class="category_image">
+            <img
+              src="images/category_image/Lounge_Wear_large_72476554-c550-4e1e-9cf6-40ebf2391008_large.webp"
+              alt=""
+            />
+          </div> -->
+          <!-- <div class="category_image">
+            <img
+              src="images/category_image/Sarees_large_9d0bd0fc-5c56-4c35-aa9e-1d73f32e2cbf_large.webp"
+              alt=""
+            />
+          </div> -->
+          <!-- <div class="category_image">
+            <img
+              src="images/category_image/Suit_Sets_large_35c8d591-a1dc-455a-b0ca-7fcbb3833db0_large.webp"
+              alt=""
+            />
+          </div> -->
+          <div class="category_image">
+            <img
+              src="images/category_image/Tops_large_b07e24bb-dafc-429d-b8d4-fa274bc81d8e_large (1).webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="new_arrival_cont">
+        <div class="new_arrival_tittle">
+          <h2>New Arrival</h2>
+        </div>
+        <div class="new_arrival_images">
+          <div class="new_arrival_image">
+            <img
+              class="image1"
+              src="images/new_arrival_images/BELACORD_2.webp"
+              alt=""
+            />
+            <img
+              class="new_arrival_new"
+              src="images/new_arrival_images/BELACORD_1.webp"
+              alt=""
+            />
+            <div class="content_data">
+              <div class="content_heading">
+                <h3>
+                  Stylum Women's Floral Printed Cotton Co-Ords set (BELACORD)
+                </h3>
+              </div>
+              <div class="card_information">
+                <span class="old_price"> ₹3999 </span>
+                <span class="new_price"> ₹1326 </span>
+                <span class="offer">60% off</span>
+              </div>
+            </div>
+          </div>
+          <div class="new_arrival_image">
+            <img
+              class="image1"
+              src="images/new_arrival_images/KPDRANGOON_4.webp"
+              alt=""
+            /><img
+              class="new_arrival_new"
+              src="images/new_arrival_images/KPDRANGOON_3.webp"
+              alt=""
+            />
+            <div class="content_data">
+              <div class="content_heading">
+                <h3>
+                  Stylum Women's Floral Printed Cotton Co-Ords set (BELACORD)
+                </h3>
+              </div>
+              <div class="card_information">
+                <span class="old_price"> ₹3999 </span>
+                <span class="new_price"> ₹1258 </span>
+                <span class="offer">62 % off</span>
+              </div>
+            </div>
+          </div>
+          <div class="new_arrival_image">
+            <img
+              class="image1"
+              src="images/new_arrival_images/KSDHEXAGREEN_1.webp"
+              alt=""
+            />
+            <img
+              class="new_arrival_new"
+              src="images/new_arrival_images/KSDHEXAGREEN_5.webp"
+              alt=""
+            />
+            <div class="content_data">
+              <div class="content_heading">
+                <h3>
+                  Stylum Women's Floral Printed Cotton Co-Ords set (BELACORD)
+                </h3>
+              </div>
+              <div class="card_information">
+                <span class="old_price"> ₹2799 </span>
+                <span class="new_price"> ₹999 </span>
+                <span class="offer">64% off</span>
+              </div>
+            </div>
+          </div>
+          <div class="new_arrival_image">
+            <img
+              class="image1"
+              src="images/new_arrival_images/KSDMOGRA_1.webp"
+              alt=""
+            />
+            <img
+              class="new_arrival_new"
+              src="images/new_arrival_images/KSDMOGRA_2.webp"
+              alt=""
+            />
+            <div class="content_data">
+              <div class="content_heading">
+                <h3>
+                  Stylum Women's Floral Printed Cotton Co-Ords set (BELACORD)
+                </h3>
+              </div>
+              <div class="card_information">
+                <span class="old_price"> ₹3599 </span>
+                <span class="new_price"> ₹1399 </span>
+                <span class="offer">61% off</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="kurata_container container-max-width">
+        <div class="kurta_title">
+          <h2>Shop Kurtas & Kurtis</h2>
+        </div>
+        <div class="kurtas_images">
+          <div class="kurtas">
+            <img
+              src="images/Kurtas/Anarkali_Suit_Sets_39442dd1-ce53-41b3-a064-38bc68fd67b9.webp"
+              alt=""
+            />
+          </div>
+          <div class="kurtas">
+            <img
+              src="images/Kurtas/Sharara_Sets_12a67331-2ffc-4c8f-9f03-ef66678c0ccf.webp"
+              alt=""
+            />
+          </div>
+          <div class="kurtas_2">
+            <div class="kurtes">
+              <img
+                class="kurtes_img1"
+                src="images/Kurtas/Co-ords_Set_86f37a2a-736a-4869-8050-5e7443b31958.webp"
+                alt=""
+              />
+              <img
+                class="kurtes_img2"
+                src="images/Kurtas/SHOP_BY_KURTA_KURTIS_2c65f5f3-16e6-4797-883e-81439548e419.webp"
+                alt=""
+              />
+            </div>
+            <div class="kurtes">
+              <img
+                class="kurtes_img1"
+                src="images/Kurtas/Kurta_Sets_c7c0806b-3624-4988-a933-d76e7bfcc5b0.webp"
+                alt=""
+              />
+              <img
+                class="kurtes_img2"
+                src="images/Kurtas/Kurta_Sets_bc776b01-46c9-437c-9df6-9b785248c88e.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="best_selling container-max-width">
+        <div class="best_sell_title">
+          <h2>Best Selling Beauties</h2>
+        </div>
+        <div class="selling_tabs">
+          <div class="selling_items">Suit Set</div>
+          <div class="selling_items">Kurtas & Kurtis</div>
+          <div class="selling_items">Co-Ords Set</div>
+          <div class="selling_items">Dresses</div>
+          <div class="selling_items">Lounge Wear</div>
+          <div class="selling_items active">Sarees</div>
+        </div>
+        <div class="selling_images">
+          <div class="selling_img">
+            <img
+              class="sell_img1"
+              src="images/best_selling/BLACKBETTY_2.webp"
+              alt=""
+            />
+            <img
+              class="sell_img2"
+              src="images/best_selling/Untitled-1.webp"
+              alt=""
+            />
+            <div class="content_data">
+              <div class="content_heading">
+                <h3>
+                  Stylum Women's Floral Printed Cotton Co-Ords set (BELACORD)
+                </h3>
+              </div>
+              <div class="card_information">
+                <span class="old_price"> ₹3599 </span>
+                <span class="new_price"> ₹1399 </span>
+                <span class="offer">61% off</span>
+              </div>
+            </div>
+          </div>
+          <div class="selling_img">
+            <img
+              class="sell_img1"
+              src="images/best_selling/KATHACORDS_1.webp"
+              alt=""
+            />
+            <img
+              class="sell_img2"
+              src="images/best_selling/KATHACORDS_2.webp"
+              alt=""
+            />
+            <div class="content_data">
+              <div class="content_heading">
+                <h3>
+                  Stylum Women's Floral Printed Cotton Co-Ords set (BELACORD)
+                </h3>
+              </div>
+              <div class="card_information">
+                <span class="old_price"> ₹3599 </span>
+                <span class="new_price"> ₹1399 </span>
+                <span class="offer">61% off</span>
+              </div>
+            </div>
+          </div>
+          <div class="selling_img">
+            <img
+              class="sell_img1"
+              src="images/best_selling/KPDAQUASEAL_1.webp"
+              alt=""
+            />
+            <img
+              class="sell_img2"
+              src="images/best_selling/KPDAQUASEAL_2.webp"
+              alt=""
+            />
+            <div class="content_data">
+              <div class="content_heading">
+                <h3>
+                  Stylum Women's Floral Printed Cotton Co-Ords set (BELACORD)
+                </h3>
+              </div>
+              <div class="card_information">
+                <span class="old_price"> ₹3599 </span>
+                <span class="new_price"> ₹1399 </span>
+                <span class="offer">61% off</span>
+              </div>
+            </div>
+          </div>
+          <div class="selling_img">
+            <img
+              class="sell_img1"
+              src="images/best_selling/PURPLEKAWA_1.webp"
+              alt=""
+            />
+            <img
+              class="sell_img2"
+              src="images/best_selling/PURPLEKAWA_2.webp"
+              alt=""
+            />
+            <div class="content_data">
+              <div class="content_heading">
+                <h3>
+                  Stylum Women's Floral Printed Cotton Co-Ords set (BELACORD)
+                </h3>
+              </div>
+              <div class="card_information">
+                <span class="old_price"> ₹3599 </span>
+                <span class="new_price"> ₹1399 </span>
+                <span class="offer">61% off</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="collection_container">
+        <div class="collection_title">
+          <h2>Collections</h2>
+        </div>
+        <div class="images_set1">
+          <div class="collection_img">
+            <img
+              src="images/collection_image/Anarkalis_large_8cb5df33-3840-4173-b813-3b1fd2edb1bb_large.webp"
+              alt=""
+            />
+            <div class="collection_content">
+              <a href="">Festive Collection</a>
+            </div>
+          </div>
+          <div class="collection_img">
+            <img
+              src="images/collection_image/Bandhani_Lehariya_large_de7630a8-975e-4ea5-bb20-09ff95fdbe13_large.webp"
+              alt=""
+            />
+            <div class="collection_content">
+              <a href="">Bandhami & Lehariya</a>
+            </div>
+          </div>
+          <div class="collection_img">
+            <img
+              src="images/collection_image/Dresses_large_61e8f42d-4f3e-4dbc-ac90-8f1d5597d054_large.webp"
+              alt=""
+            />
+            <div class="collection_content">
+              <a href="">Every Day Affair</a>
+            </div>
+          </div>
+          <div class="collection_img">
+            <img
+              src="images/collection_image/Every_Day_Affair_large_bd1abdc1-6bd0-4115-962f-3c724b537a4d_large.webp"
+              alt=""
+            />
+            <div class="collection_content">
+              <a href="">Fusion Wear</a>
+            </div>
+          </div>
+
+          <div class="collection_img">
+            <img
+              src="images/collection_image/Festive_Collection_large_1_large.webp"
+              alt=""
+            />
+            <div class="collection_content">
+              <a href="">Sarees</a>
+            </div>
+          </div>
+          <div class="collection_img">
+            <img
+              src="images/collection_image/Fusion_Wear_large_9c730b9b-be03-4fec-aaf6-aeb702faa2a4_large.webp"
+              alt=""
+            />
+            <div class="collection_content">
+              <a href="">Anarkalis</a>
+            </div>
+          </div>
+          <div class="collection_img">
+            <img
+              src="images/collection_image/Sarees_large_21dc2eda-6a20-4ed0-8158-86d9607ea696_large.webp"
+              alt=""
+            />
+            <div class="collection_content">
+              <a href="">Sharara Sets</a>
+            </div>
+          </div>
+
+          <div class="collection_img">
+            <img
+              src="images/collection_image/Sharara_Sets_large_d6a2f0fa-7173-4ce6-ae2b-2df97752e3b3_large.webp"
+              alt=""
+            />
+            <div class="collection_content">
+              <a href="">Dresses</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner_shop">
+        <img src="images/banner-image/Stylum_Banner_1_1920x.webp" alt="" />
+      </div>
+      <div class="shop_occasion container-max-width">
+        <div class="title">
+          <h3>Shop By Occasion</h3>
+        </div>
+        <div class="occasion_images">
+          <div class="occasion_img">
+            <img
+              src="images/ocassion_img/Festive_Wear_large_b3b029e8-c5d1-4573-9c83-fa79014d7f6e_large.webp"
+              alt=""
+            />
+          </div>
+          <div class="occasion_img">
+            <img
+              src="images/ocassion_img/Casual_Wear_large_813aa05e-d289-4823-8be8-a4b71f19449c_large.webp"
+              alt=""
+            />
+          </div>
+          <div class="occasion_img">
+            <img
+              src="images/ocassion_img/Office_Wear_large_336dd869-c919-415a-99ec-266f7aa48d90_large.webp"
+              alt=""
+            />
+          </div>
+          <div class="occasion_img">
+            <img
+              src="images/ocassion_img/Night_Wear_large_d4a6beb6-889b-4f62-a278-547122fc0647_large.webp"
+              alt=""
+            />
+          </div>
+          <div class="occasion_img">
+            <img
+              src="images/ocassion_img/Lounge_Wear_large_c2c53ddb-2ca1-4094-b629-c3d24d7d2f99_large.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="work_container">
+        <div class="image_text_section container-max-width">
+          <div class="image_section">
+            <img src="images/work_img/about_us_page_1.webp" alt="" />
+          </div>
+          <div class="text_section">
+            <h2>About Us</h2>
+            <p class="traditional_about">
+              Traditional and <span>Contemporary</span>
+              Experience
+            </p>
+            <p>
+              Owing to this philosophy, Stylum as a brand is a place that not
+              only focuses on its products but believes in crafting a unique
+              concoction of style and experience to come up with meaningful
+              contemporary silhouettes.
+            </p>
+            <p>
+              Mesmerizing, not quite ethnic, and not all out western, our brand
+              curates products with a touch of traditionally handcrafted
+              embroideries like never before in lush fabrics, elegant motifs,
+              and prints with breathtaking details to make sure that every
+              attire speaks for you.
+            </p>
+            <a href="" class="button cust-btn"> Know More </a>
+          </div>
+        </div>
+      </div>
+      <div class="usp_section">
+        <div class="usp_icon_section">
+          <div class="usp_icon"><img src="images/usp_icon/Free_Shipping_107x.webp" alt="">
+            <div class="content">
+              <p>Free Shipping</p>
+            </div></div>
+          <div class="usp_icon"><img src="images/usp_icon/world_wide_Delivery_107x.webp" alt=""><div class="content">
+            <p>Worldwide Delivery</p>
+          </div></div>
+          <div class="usp_icon"><img src="images/usp_icon/Secure_Patment_107x.webp" alt=""><div class="content">
+            <p>Secured Payments</p>
+          </div></div>
+          <div class="usp_icon"><img src="images/usp_icon/COD_107x.webp" alt=""><div class="content">
+            <p>Cash On Delivery</p>
+          </div></div>
+          <div class="usp_icon"><img src="images/usp_icon/Customer_Support_107x.avif" alt="">
+            <div class="content">
+              <p>Customer Supprt</p>
+            </div></div>
+        </div>
+      </div>
+      <div class="customer_review_section container-max-width">
+        <div class="title">
+          <h3>Customer Review</h3>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_content">
+        <div class="footer_wrapper">
+          <div class="footer_items">
+            <div class="footer_item">
+              <h2>GET IN TOUCH</h2>
+              <div class="footer_item_detail">
+                <div class="footer_details">
+                  <p class="email">
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:care@stylum.in">care@stylum.in</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="footer_item"></div>
+            <div class="footer_item"></div>
+            <div class="footer_item"></div>
+            <div class="footer_item"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
