@@ -10,3 +10,8 @@ btn.addEventListener('click',()=>{
 close.addEventListener('click',()=>{
     modal.style.display = "none";
 } ,false);
+const sets_images = document.querySelector('.selling_images');
+const image = document.querySelectorAll('.selling_img')
+function suit(){
+image.style.display = "none";
+}

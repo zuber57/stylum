@@ -17,6 +17,37 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+#scroll {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: #601a3ed4;
+  text-indent: -9999px;
+  display: none;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  z-index: 1;
+}
+#scroll span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -12px;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #ffffff;
+}
+.icon-hamburger{
+  width: 20px;
+  height: 20px;
+  display: none;
+}
 /* header start */
 .anoucement_bar {
   display: block;
@@ -46,7 +77,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-y: scroll;
 }
 .head_text {
   width: calc(33% - 12px);
@@ -169,12 +199,14 @@ p {
   background-color: #fff;
   border: 0.4px solid rgb(221, 217, 217);
   top: 48px;
+  padding: 1.4rem 0;
 }
 .headermenu-list li a {
   list-style: none;
   text-decoration: none;
   color: #000;
   font-size: 16px;
+  padding: 0.8rem 2.4rem;
 }
 
 .categories {
@@ -211,6 +243,7 @@ p {
   text-decoration: none;
   font-weight: 500;
   font-size: 13px;
+  letter-spacing: 1px;
 }
 /* ---Item category end--- */
 /* Sliding  Image Banner  */
@@ -1196,6 +1229,7 @@ h3 a {
 .email a{
   text-decoration: none;
   font-size: 14px;
+  letter-spacing: 1px;
   color: #FFFFFFbF;
 }
 .ico{
@@ -1203,7 +1237,8 @@ h3 a {
 }
 .usefull_link li{
   list-style: none;
-  font-size: 1rem;
+  font-size: 14px;
+  letter-spacing: 1px;
   color: #FFFFFFbF;
   padding-bottom: 14px;
   display: block;
@@ -1213,14 +1248,16 @@ button.newsletter__button {
   border: none;
   background: #fff;
   width: 3rem;
+  cursor: pointer;
 }
 .email_input input{
-  padding-right: 5rem;
-    border: 1px solid #fff;
-    flex-grow: 1;
-    text-align: left;
-    padding: 1rem;
-    background: none;
+  border: 1px solid #fff;
+  flex-grow: 1;
+  text-align: left;
+  padding: 0.9rem;
+  background: none;
+  outline: none;
+  width: 280px;
     
 }
 .sizes-list{
@@ -1250,6 +1287,10 @@ button.newsletter__button {
   display: flex;
   gap: 15px;
   width: 100%;
+}
+.size-item:hover{
+background-color: #601a3e;
+color: #fff;
 }
 .cart-button .button{
   /* padding: 5px !important; */
@@ -1291,15 +1332,21 @@ button.newsletter__button {
     color: #FFFFFFbF;
     line-height: 25px;
 }
+#buy_btn{
+  color: #601a3e;
+  background: #fff;
+}
 .number a{
   text-decoration: none;
   font-size: 14px;
+  letter-spacing: 1px;
   color: #FFFFFFbF;
 
 }
 .footer_category_link{
   text-decoration: none;
-    font-size: 1rem;
+    font-size: 14px;
+    letter-spacing: 1px;
     color: #FFFFFFbF;
     padding-bottom: 14px;
     display: block;
@@ -1420,6 +1467,12 @@ footer{
   display: flex;
   gap: 20px;
   overflow: scroll;
+}
+.icon-hamburger{
+display: block;
+}
+.search_track{
+  gap: 10px;
 }
 .footer_wrapper{
   padding: 40px 0 80px;

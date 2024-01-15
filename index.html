@@ -17,6 +17,7 @@
     <title>Document</title>
   </head>
   <body>
+    <a href="#" id="scroll" style="display: block"><span> </span></a>
     <header class="header_main">
       <div class="slider">
         <p class="anoucement_bar">FREE SHIPPING IN INDIA</p>
@@ -42,6 +43,37 @@
       <sticky-header class="header_main_wrapper">
         <div class="header_wraper container-max-width page-width">
           <div class="search_track track">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                focusable="false"
+                role="presentation"
+                class="icon icon-hamburger"
+                fill="none"
+                viewBox="0 0 18 16"
+              >
+                <path
+                  d="M1 .5a.5.5 0 100 1h15.71a.5.5 0 000-1H1zM.5 8a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1A.5.5 0 01.5 8zm0 7a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1a.5.5 0 01-.5-.5z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+
+              <!-- <svg
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                focusable="false"
+                role="presentation"
+                class="icon icon-close"
+                fill="none"
+                viewBox="0 0 18 17"
+              >
+                <path
+                  d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z"
+                  fill="currentColor"
+                ></path>
+              </svg> -->
+            </span>
             <a href="https://www.bluedart.com/tracking">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -384,7 +416,7 @@
             alt
           />
           <div class="content">
-            <a href="/collections/new-arrivals">New Arrival</a>
+            <a href="/collections/new-arrivals">Anarkali Suit Sets</a>
           </div>
         </div>
         <div class="items_row">
@@ -393,7 +425,7 @@
             alt
           />
           <div class="content">
-            <a href="/collections/new-arrivals">New Arrival</a>
+            <a href="/collections/new-arrivals">Co-Ords Set</a>
           </div>
         </div>
         <div class="items_row">
@@ -402,26 +434,26 @@
             alt
           />
           <div class="content">
-            <a href="/collections/new-arrivals">New Arrival</a>
+            <a href="/collections/new-arrivals">Dresses</a>
           </div>
         </div>
 
         <div class="items_row">
           <img src="images/item_row_image/Casual_Kurta_large.webp" alt />
           <div class="content">
-            <a href="/collections/new-arrivals">New Arrival</a>
+            <a href="/collections/new-arrivals">Casual Wear</a>
           </div>
         </div>
         <div class="items_row">
           <img src="images/item_row_image/Sarees_large_1_large.jpg" alt />
           <div class="content">
-            <a href="/collections/new-arrivals">New Arrival</a>
+            <a href="/collections/new-arrivals">Sarees</a>
           </div>
         </div>
         <div class="items_row">
           <img src="images/item_row_image/Kurta_Sets_large.webp" />
           <div class="content">
-            <a href="/collections/new-arrivals">New Arrival</a>
+            <a href="/collections/new-arrivals">Kurta Sets</a>
           </div>
         </div>
         <div class="items_row">
@@ -429,7 +461,7 @@
             src="images/item_row_image/Lounge_Wear_large_91df9e75-014d-41e0-9043-caf5ba093022_large.webp"
           />
           <div class="content">
-            <a href="/collections/new-arrivals">New Arrival</a>
+            <a href="/collections/new-arrivals">Lounge Wear</a>
           </div>
         </div>
       </div>
@@ -617,11 +649,11 @@
                   </div>
                 </button>
 
-                <button type="button" class="button">
+                <button type="button" class="button ">
                   <span>Buy Now</span>
                 </button>
               </div>
-          </div>
+            </div>
           </div>
           <div class="new_arrival_image">
             <img
@@ -695,7 +727,7 @@
                   <span>Buy Now</span>
                 </button>
               </div>
-          </div>
+            </div>
           </div>
           <div class="new_arrival_image">
             <img
@@ -770,7 +802,7 @@
                   <span>Buy Now</span>
                 </button>
               </div>
-          </div>
+            </div>
           </div>
           <div class="new_arrival_image">
             <img
@@ -845,7 +877,7 @@
                   <span>Buy Now</span>
                 </button>
               </div>
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -899,7 +931,7 @@
           <h2>Best Selling Beauties</h2>
         </div>
         <div class="selling_tabs">
-          <div class="selling_items" onclick="">Suit Set</div>
+          <div class="selling_items" onclick="suit()">Suit Set</div>
           <div class="selling_items" onclick="">Kurtas & Kurtis</div>
           <div class="selling_items" onclick="">Co-Ords Set</div>
           <div class="selling_items" onclick="">Dresses</div>
@@ -931,55 +963,55 @@
               </div>
             </div>
             <div class="quick-add">
-                <ul class="sizes-list">
-                  <li class="size-item variant_id--" data-parent="S">
-                    <a title="" tabindex="0"> S </a>
-                  </li>
+              <ul class="sizes-list">
+                <li class="size-item variant_id--" data-parent="S">
+                  <a title="" tabindex="0"> S </a>
+                </li>
 
-                  <li class="size-item variant_id--" data-parent="M">
-                    <a title="" tabindex="0"> M </a>
-                  </li>
+                <li class="size-item variant_id--" data-parent="M">
+                  <a title="" tabindex="0"> M </a>
+                </li>
 
-                  <li class="size-item variant_id--" data-parent="L">
-                    <a title="" tabindex="0"> L </a>
-                  </li>
+                <li class="size-item variant_id--" data-parent="L">
+                  <a title="" tabindex="0"> L </a>
+                </li>
 
-                  <li class="size-item variant_id--" data-parent="XL">
-                    <a title="" tabindex="0"> XL </a>
-                  </li>
+                <li class="size-item variant_id--" data-parent="XL">
+                  <a title="" tabindex="0"> XL </a>
+                </li>
 
-                  <li class="size-item variant_id--" data-parent="XXL">
-                    <a title="" tabindex="0"> XXL </a>
-                  </li>
-                </ul>
-                <div class="cart-button">
-                  <button class="product-form__submit button" tabindex="0">
-                    Add to Cart
-                    <div class="loading-overlay__spinner hidden">
-                      <svg
-                        aria-hidden="true"
-                        focusable="false"
-                        role="presentation"
-                        class="spinner"
-                        viewBox="0 0 66 66"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle
-                          class="path"
-                          fill="none"
-                          stroke-width="6"
-                          cx="33"
-                          cy="33"
-                          r="30"
-                        ></circle>
-                      </svg>
-                    </div>
-                  </button>
+                <li class="size-item variant_id--" data-parent="XXL">
+                  <a title="" tabindex="0"> XXL </a>
+                </li>
+              </ul>
+              <div class="cart-button">
+                <button class="product-form__submit button" tabindex="0">
+                  Add to Cart
+                  <div class="loading-overlay__spinner hidden">
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      role="presentation"
+                      class="spinner"
+                      viewBox="0 0 66 66"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        class="path"
+                        fill="none"
+                        stroke-width="6"
+                        cx="33"
+                        cy="33"
+                        r="30"
+                      ></circle>
+                    </svg>
+                  </div>
+                </button>
 
-                  <button type="button" class="button">
-                    <span>Buy Now</span>
-                  </button>
-                </div>
+                <button type="button" id="buy_btn" class="button">
+                  <span>Buy Now</span>
+                </button>
+              </div>
             </div>
           </div>
           <div class="selling_img">
@@ -1055,7 +1087,7 @@
                   <span>Buy Now</span>
                 </button>
               </div>
-          </div>
+            </div>
           </div>
           <div class="selling_img">
             <img
@@ -1130,7 +1162,7 @@
                   <span>Buy Now</span>
                 </button>
               </div>
-          </div>
+            </div>
           </div>
           <div class="selling_img">
             <img
@@ -1205,7 +1237,7 @@
                   <span>Buy Now</span>
                 </button>
               </div>
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1215,22 +1247,22 @@
         </div>
         <div class="images_set1">
           <div class="collection_img">
-            <div class="img_set">  
+            <div class="img_set">
               <img
-              src="images/collection_image/Anarkalis_large_8cb5df33-3840-4173-b813-3b1fd2edb1bb_large.webp"
-              alt=""
+                src="images/collection_image/Anarkalis_large_8cb5df33-3840-4173-b813-3b1fd2edb1bb_large.webp"
+                alt=""
               />
             </div>
-              <div class="collection_content">
+            <div class="collection_content">
               <a href="">Festive Collection</a>
             </div>
           </div>
           <div class="collection_img">
             <div class="img_set">
-            <img
-              src="images/collection_image/Bandhani_Lehariya_large_de7630a8-975e-4ea5-bb20-09ff95fdbe13_large.webp"
-              alt=""
-            />
+              <img
+                src="images/collection_image/Bandhani_Lehariya_large_de7630a8-975e-4ea5-bb20-09ff95fdbe13_large.webp"
+                alt=""
+              />
             </div>
             <div class="collection_content">
               <a href="">Bandhami & Lehariya</a>
@@ -1238,10 +1270,10 @@
           </div>
           <div class="collection_img">
             <div class="img_set">
-            <img
-              src="images/collection_image/Dresses_large_61e8f42d-4f3e-4dbc-ac90-8f1d5597d054_large.webp"
-              alt=""
-            />
+              <img
+                src="images/collection_image/Dresses_large_61e8f42d-4f3e-4dbc-ac90-8f1d5597d054_large.webp"
+                alt=""
+              />
             </div>
             <div class="collection_content">
               <a href="">Every Day Affair</a>
@@ -1249,10 +1281,10 @@
           </div>
           <div class="collection_img">
             <div class="img_set">
-            <img
-              src="images/collection_image/Every_Day_Affair_large_bd1abdc1-6bd0-4115-962f-3c724b537a4d_large.webp"
-              alt=""
-            />
+              <img
+                src="images/collection_image/Every_Day_Affair_large_bd1abdc1-6bd0-4115-962f-3c724b537a4d_large.webp"
+                alt=""
+              />
             </div>
             <div class="collection_content">
               <a href="">Fusion Wear</a>
@@ -1261,20 +1293,21 @@
 
           <div class="collection_img">
             <div class="img_set">
-            <img
-              src="images/collection_image/Festive_Collection_large_1_large.webp"
-              alt=""
-            /></div>
+              <img
+                src="images/collection_image/Festive_Collection_large_1_large.webp"
+                alt=""
+              />
+            </div>
             <div class="collection_content">
               <a href="">Sarees</a>
             </div>
           </div>
           <div class="collection_img">
             <div class="img_set">
-            <img
-              src="images/collection_image/Fusion_Wear_large_9c730b9b-be03-4fec-aaf6-aeb702faa2a4_large.webp"
-              alt=""
-            />
+              <img
+                src="images/collection_image/Fusion_Wear_large_9c730b9b-be03-4fec-aaf6-aeb702faa2a4_large.webp"
+                alt=""
+              />
             </div>
             <div class="collection_content">
               <a href="">Anarkalis</a>
@@ -1282,10 +1315,11 @@
           </div>
           <div class="collection_img">
             <div class="img_set">
-            <img
-              src="images/collection_image/Sarees_large_21dc2eda-6a20-4ed0-8158-86d9607ea696_large.webp"
-              alt=""
-            /></div>
+              <img
+                src="images/collection_image/Sarees_large_21dc2eda-6a20-4ed0-8158-86d9607ea696_large.webp"
+                alt=""
+              />
+            </div>
             <div class="collection_content">
               <a href="">Sharara Sets</a>
             </div>
@@ -1293,10 +1327,11 @@
 
           <div class="collection_img">
             <div class="img_set">
-            <img
-              src="images/collection_image/Sharara_Sets_large_d6a2f0fa-7173-4ce6-ae2b-2df97752e3b3_large.webp"
-              alt=""
-            /></div>
+              <img
+                src="images/collection_image/Sharara_Sets_large_d6a2f0fa-7173-4ce6-ae2b-2df97752e3b3_large.webp"
+                alt=""
+              />
+            </div>
             <div class="collection_content">
               <a href="">Dresses</a>
             </div>
