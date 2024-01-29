@@ -16,7 +16,7 @@ function suit(){
 image.style.display = "none";
 }
 $('.cutomer_slick').slick({
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 2,
@@ -30,7 +30,11 @@ $('.cutomer_slick').slick({
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
-          dots: true
+          centerMode: true,
+          centerPadding: '40px',
+          dots: false,
+          arrows:false
+
         }
       },
       {
@@ -70,7 +74,7 @@ $('.cutomer_slick').slick({
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
+          dots: false,
         }
       },
       {
@@ -131,19 +135,18 @@ $('.cutomer_slick').slick({
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
+    
     ]
   });
 
-  console.log($(window).width())
-  $('.custom_slick').slick({
+  $('.item_slide').slick({
     dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '40px',
     autoplay:true,
     arrows:true,
     pagination:false,
@@ -152,25 +155,26 @@ $('.cutomer_slick').slick({
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
+          slidesToShow: 3,
+          arrows: false,
+          slidesToScroll: 1,
           infinite: true,
           dots: true
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 769, 
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           arrows: false,
-          slidesToScroll: 3
+          slidesToScroll: 1
         }
       },
       {
         breakpoint: 480,
         settings: {
           arrows:false,
-          slidesToShow: 2,
+          slidesToShow: 1,
           arrows: false,
           slidesToScroll: 1,
         }
@@ -188,9 +192,11 @@ $('.cutomer_slick').slick({
     dots: false,
     infinite: true,
     speed: 300,
+    centerMode: true,
+    centerPadding: '40px',
     slidesToShow: 8,
     slidesToScroll: 1,
-    autoplay:false,
+    autoplay:true,
     arrows:false,
     pagination:false,
     loop:true,
@@ -198,7 +204,7 @@ $('.cutomer_slick').slick({
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 5,
           slidesToScroll: 4,
           infinite: true,
           dots: true
@@ -207,7 +213,7 @@ $('.cutomer_slick').slick({
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           arrows: false,
           slidesToScroll: 2
         }
@@ -227,40 +233,86 @@ $('.cutomer_slick').slick({
  
 }
 
-// $('.selling_slick').slick({
-//   dots: false,
-//   infinite: true,
-//   speed: 300,
-//   slidesToShow: 6,
-//   slidesToScroll: 1,
-//   autoplay:true,
-//   arrows:true,
-//   pagination:false,
-//   loop:true,
-//   responsive: [
-//     {
-//       breakpoint: 1024,
-//       settings: {
-//         slidesToShow: 4,
-//         slidesToScroll: 4,
-//         infinite: true,
-//         dots: true
-//       }
-//     },
-//     {
-//       breakpoint: 600,
-//       settings: {
-//         slidesToShow: 3,
-//         slidesToScroll: 3
-//       }
-//     },
-//     {
-//       breakpoint: 480,
-//       settings: {
-//         slidesToShow: 3,
-//         slidesToScroll: 1,
-//       }
-//     }
+$('.ocassion_slide').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  autoplay:true,
+  arrows:false,
+  pagination:false,
+  dots: false,
+  loop:true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        infinite: true,
+     
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        centerMode: true,
+  centerPadding: '40px',
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    }
 
-//   ]
-// });
+  ]
+});
+
+$('.usp_icon_section').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  autoplay:true,
+  arrows:false,
+  pagination:false,
+  dots: false,
+  loop:true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 4,
+        infinite: true,
+     
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+  //       centerMode: true,
+  // centerPadding: '40px',
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    }
+
+  ]
+});

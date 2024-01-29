@@ -43,9 +43,9 @@ p {
   border: 8px solid transparent;
   border-bottom-color: #ffffff;
 }
-.icon-hamburger{
-  width: 20px;
-  height: 20px;
+.icon-hamburger {
+  width: 25px;
+  height: 25px;
   display: none;
 }
 /* header start */
@@ -278,10 +278,10 @@ bottom: 15px;
   margin: 0 1px;
  width: auto;
 }
-.custom_slick .slick-arrow{
+.item_slide .slick-arrow{
   margin:  0px -12px;
 }
-.custom_slick .slick-slide{
+.item_slide .slick-slide{
   margin: 0 10px;
 }
 .gift_banner {
@@ -618,6 +618,9 @@ bottom: 15px;
   width: calc(25% - 15px);
   overflow: hidden;
 }
+.banner_mobile_image{
+display: none;
+}
 
 .kurta_title h2 {
   font-size: 36px;
@@ -745,14 +748,13 @@ justify-content: center;
 }
 .best_sell_title {
   color: var(--text);
-  margin-top: 2rem;
-  /* text-align: center; */
+  margin-top: 60px;
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-transform: capitalize;
   position: relative;
-  top: 2rem;
 }
 .vibe_desc{
   display: flex;
@@ -826,7 +828,6 @@ justify-content: center;
   font-weight: 700;
   line-height: 1;
   font-family: "Allura", cursive !important;
-  margin: 0 auto 3rem;
   position: relative;
 }
 .best_sell_title h2::before {
@@ -947,9 +948,9 @@ justify-content: center;
   opacity: 0;
   visibility: hidden;
   transition: 0.4s ease-in-out;
-  content: '';
   background: #fff5fbe0;
   position: absolute;
+  margin: 0px 4px;
 }
 .occasion_img p{
   position: absolute;
@@ -1088,17 +1089,17 @@ justify-content: center;
   margin: 0 auto;
 }
 .usp_icon_section {
-  display: flex;
+  /* display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; */
   margin-top: 3rem;
 }
 .usp_icon {
   display: block;
-  width: 20% !important;
+  /* width: 20% !important; */
 }
-.usp_icon img {
+.usp_img  {
   background: #fff;
   font-size: 38px !important;
   border-radius: 50%;
@@ -1109,7 +1110,10 @@ justify-content: center;
   box-shadow: 1px 1px 4px #601a3ec2;
   padding: 20px;
   margin-top: 10px;
-  width: calc(50% - 10px);
+  width: 40%;
+}
+.usp_icon img{
+  max-width: 100%;
 }
 .usp_icon p {
   font-weight: 600;
@@ -1133,6 +1137,12 @@ justify-content: center;
 }
 .customer_text {
   width: 70%;
+}
+.customer_text p{
+  color: gray;
+}
+.customer_name p{
+  color: gray;
 }
 .customer-review-section .customer_img {
   display: block;
@@ -1212,10 +1222,6 @@ justify-content: center;
   color: transparent;
   font-size: 11px;
 }
-.insta_img img {
-  width: 95%;
-  height: 95%;
-}
 
 a.insta_feed {
   width: calc(16% - 1.5px);
@@ -1239,6 +1245,7 @@ a.insta_feed {
   gap: 20px;
   background: #fff;
   width: calc(50% - 15px);
+  position: relative;
 }
 @font-face {
   font-family: Inter, sans-serif !important;
@@ -1440,6 +1447,9 @@ button.newsletter__button {
   border: 0;
   position: static;
 }
+.occasion_img {
+  margin: 0 10px;
+}
 .size-item:hover{
 background-color: #601a3e;
 color: #fff;
@@ -1599,18 +1609,57 @@ footer{
   color: #c89936;
   padding-left: 5px;
 }
-@media screen and (max-width:600px) {
-  .offer_image{
-    flex-wrap: wrap;
-  }
-  .vibes{
-    min-width: 180px;
-  }
-  .vibe_container{
-    overflow: auto;
-  }
-}
+.banner_image img.mob-img{
+  display: none;
+ }
+ .banner_image img.desk-img{
+   display: block;
+ }
+ .banner_shop img.mob-img{
+  display: none;
+ }
+ .banner_shop img.desk-img{
+   display: block;
+ }
+ 
+ .ban_img img.mob-img{
+  display: none;
+ }
+ .ban_img img.desk-img{
+   display: block;
+ }
 @media screen and (max-width: 769px) {
+.page-width{
+  padding: 0 4rem;
+}
+.banner_image img.mob-img{
+ display: block;
+}
+.banner_image img.desk-img{
+  display: none;
+}
+
+.banner_shop img.mob-img{
+  display: block;
+ }
+ .banner_shop img.desk-img{
+   display: none;
+ }
+ .ban_img img.mob-img{
+  display: block;
+ }
+ .ban_img img.desk-img{
+   display: none;
+ }
+
+.occasion_img p{
+  opacity: 1;
+  font-size: 14px;
+  visibility: visible;
+  transform: translate(-50% , 200%);
+  color: #fff !important;
+}
+
  .instagram_images > :nth-child(n+5){
   display: none;
  }
@@ -1618,6 +1667,37 @@ footer{
   border-radius: 50%;
   
  }
+ .customer_img{
+  position: absolute;
+  top: -65px;
+ }
+ .customer_img {
+  width: 100px;
+}
+.customer_text {
+  padding: 15px 0px;
+}
+.customer_title {
+  text-align: center;
+  font-size: 13px;
+  line-height: 22px;
+}
+.customer_name p {
+  padding: 5px;
+  color: gray;
+  text-align: center;
+  font-size: 13px;
+}
+p.review-star-hide.fiveStar {
+  text-align: center;
+}
+
+.customer_card{
+  min-height: 230px;
+}
+.customers_cards .slick-track {
+ margin-top: 70px;
+}
  .vibes{
   min-width: 180px;
  }
@@ -1637,11 +1717,11 @@ footer{
   justify-content: start;
 }.occasion_images{
   margin-top: 10px;
-  overflow: auto;
+  /* overflow: auto; */
   justify-content: start;
 }
 .customers_cards {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   gap: 20px;
 }
@@ -1660,43 +1740,25 @@ display: block;
     padding: 0;
 }
 .customer_card { 
-  display: flex; justify-content: center; flex-direction: column; 
-gap: 10px; 
+  display: flex; 
+  justify-content: center;
+   flex-direction: column; 
+  gap: 10px; 
   background: #fff; 
   width: 300px; 
-  align-items: center; max-width: 100%; 
-min-width: 200px; 
+  align-items: center;
 }
 .footer_items{
   flex-direction: column;
 }
 
-.icon-track-order {
-  width: 25px;
-  height: 25px;
-}
-.icon-search {
-  height: 20px;
-  width: 20px;
-}
 .occasion_img:hover:before,
 .occasion_img:hover p
 {
   opacity: 0;
   visibility: hidden;
 }
-.icon-account {
-  width: 19px;
-  height: 19px;
-}
-.header_like_icon{
-    height: 25px;
-    width: 25px;
-}
-.icon-cart-empty{
-  height: 25px;
-  width: 25px;
-}
+
 /*  */
 .header_icon_icons{
   padding: 1px;
@@ -1741,7 +1803,7 @@ min-width: 200px;
     display: block;
   }
   .header_icon {
-    justify-content: center;
+    justify-content: end;
   }
   .search_track {
     padding: 0;
@@ -1770,10 +1832,7 @@ min-width: 200px;
   .card_information {
     font-size: 11px;
   }
-  .header__icons .icon {
-    width: 25px;
-    height: 25px;
-  }
+  
   .kurtas {
     width: calc(50% - 5px);
   }
@@ -1788,11 +1847,15 @@ min-width: 200px;
   .images_set1{
     gap: 10px;
   }
-  .usp_icon img {
+  .usp_img  {
     padding: 9px;
     margin-top: 10px;
-    width: calc(91% - 30px);
+    width: 40%;
   }
+  .occasion_img.slick-slide.slick-active {
+    margin: 0 10px;
+}
+  
   .image_text_section {
     flex-wrap: wrap;
   }
@@ -1808,24 +1871,89 @@ min-width: 200px;
   }
   .data{
     justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
   .offer_cards {
     width: calc(50% - 5px);
     margin-top: 0;
   }
   .offer_image{
-    
+    flex-wrap: wrap;
     gap: 10px;
   }
   .usp_icon .content {
     font-size: 12px;
   }
-  .best_sell_title h2 {
-    font-size: 24px;
-  }
+
   .kurtes {
     width: calc(50% - 5px);
   }
+
+  }
+  @media screen and (max-width:600px) {
+    .page-width{
+      padding: 0 15px !important;
+    }
+ 
+  .header__icons .icon {
+    width: 25px;
+    height: 25px;
+  }
+  
+.icon-track-order {
+  width: 25px;
+  height: 25px;
+}
+.icon-search {
+  height: 20px;
+  width: 20px;
+}
+  .icon-account {
+    width: 19px;
+    height: 19px;
+  }
+  .header_like_icon{
+      height: 25px;
+      width: 25px;
+  }
+  .icon-cart-empty{
+    height: 25px;
+    width: 25px;
+  }
+  .icon-hamburger{
+    height: 20px;
+    width: 20px;
+  }
+    .offer_image{
+      flex-wrap: wrap;
+    }
+    .vibes{
+      min-width: 180px;
+    }
+    .vibe_container{
+      overflow: auto;
+    }
+    .best_sell_title h2 {
+      font-size: 24px;
+    }
+    .best_sell_title{
+      margin-bottom: 20px;
+      margin-top: 40px;
+    }
+    .occasion_img p{
+     /* position:  static; */
+     bottom: 23px;
+     color: #601a3e !important;
+     font-size: 10px ;
+    }
+    
+    .occasion_img{
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      justify-content: center;
+    }
   }
   
 
